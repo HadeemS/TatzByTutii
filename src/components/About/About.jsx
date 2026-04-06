@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/images/about-portrait.svg'
+import aboutImg from '../../assets/images/TatArtistV2.jpg'
 import SectionHeading from '../SectionHeading/SectionHeading'
 import './About.css'
 
@@ -8,7 +8,7 @@ export default function About() {
       <div className="container about__grid">
         <div className="about__visual">
           <div className="about__frame">
-            <img src={aboutImg} alt="" className="about__image" width={600} height={720} />
+            <img src={aboutImg} alt="Jazmine Tutii" className="about__image" />
             <div className="about__frame-glow" aria-hidden />
           </div>
         </div>
