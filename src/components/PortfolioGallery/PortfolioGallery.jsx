@@ -7,8 +7,8 @@ export default function PortfolioGallery({ onOpenItem }) {
   const [filter, setFilter] = useState('All')
 
   const items = useMemo(() => {
-    if (filter === 'All') return portfolioItems
-    return portfolioItems.filter((item) => item.category === filter)
+    if (filter === 'All') return galleryItems
+    return galleryItems.filter((item) => item.category === filter)
   }, [filter])
 
   return (
@@ -36,7 +36,7 @@ export default function PortfolioGallery({ onOpenItem }) {
           ))}
         </div>
 
-        <ul className="portfolio__masonry">
+        <ul className="portfolio__grid">
           {items.map((item) => (
             <li key={item.id} className="portfolio__item">
               <button type="button" className="portfolio__card" onClick={() => onOpenItem(item)}>
@@ -56,8 +56,6 @@ export default function PortfolioGallery({ onOpenItem }) {
                       alt=""
                       className="portfolio__thumb"
                       loading="lazy"
-                      width={800}
-                      height={1000}
                     />
                   )}
                   {item.mediaType === 'video' ? (

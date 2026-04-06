@@ -1,0 +1,35 @@
+.error-boundary {
+  min-height: 100vh;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  max-width: 36rem;
+  margin: 0 auto;
+  color: rgba(245, 243, 255, 0.92);
+}
+
+.error-boundary__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 1rem;
+  color: var(--accent-lilac);
+}
+
+.error-boundary__text {
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+  color: rgba(245, 243, 255, 0.75);
+  font-size: 0.98rem;
+}
+
+.error-boundary__pre {
+  margin: 0;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  background: rgba(7, 7, 12, 0.85);
+  color: rgba(232, 213, 255, 0.88);
+  font-size: 0.82rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
