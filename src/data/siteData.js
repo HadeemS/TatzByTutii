@@ -20,7 +20,6 @@ export const siteData = {
 export const navLinks = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'featured', label: 'Tattoo work' },
   { id: 'portfolio', label: 'Portfolio' },
   { id: 'services', label: 'Services' },
   { id: 'booking', label: 'Book' },

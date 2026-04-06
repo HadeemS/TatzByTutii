@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import About from './components/About/About'
-import FeaturedWork from './components/FeaturedWork/FeaturedWork'
 import PortfolioGallery from './components/PortfolioGallery/PortfolioGallery'
 import Services from './components/Services/Services'
 import BookingForm from './components/BookingForm/BookingForm'
@@ -21,7 +20,6 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <FeaturedWork onOpenItem={setModalItem} />
         <PortfolioGallery onOpenItem={setModalItem} />
         <Services />
         <BookingForm />

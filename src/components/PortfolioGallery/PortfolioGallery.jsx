@@ -7,8 +7,8 @@ export default function PortfolioGallery({ onOpenItem }) {
   const [filter, setFilter] = useState('All')
 
   const items = useMemo(() => {
-    if (filter === 'All') return galleryItems
-    return galleryItems.filter((item) => item.category === filter)
+    if (filter === 'All') return portfolioItems
+    return portfolioItems.filter((item) => item.category === filter)
   }, [filter])
 
   return (
@@ -18,7 +18,7 @@ export default function PortfolioGallery({ onOpenItem }) {
           align="center"
           eyebrow="Portfolio"
           title="Gallery"
-          subtitle="More tattoo work — photos and clips. Filter by style or tap a clip to watch."
+          subtitle="Photos and session clips — filter by style, tap to open full size or play video."
         />
 
         <div className="portfolio__filters" role="tablist" aria-label="Filter portfolio">
